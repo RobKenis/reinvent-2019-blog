@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - "npm install"
+      - "npm run-script build"
+  post_build:
+    commands:
+      - echo Completed building. Uploading artifacts to $DEPLOY_BUCKET
+      - aws s3 sync public s3://$DEPLOY_BUCKET/
