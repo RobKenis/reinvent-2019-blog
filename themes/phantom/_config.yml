@@ -5,7 +5,7 @@ menu:
   About: /about.html
 
 # Logo Image Source
-logo_src: /images/favicon.ico
+logo_src: /images/logo.ico
 
 # Theme Main Subtitle
 subtitle_main: This is Phantom, a free, fully responsive site<br />template designed by <a href="http://html5up.net">HTML5 UP</a>.
