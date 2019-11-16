@@ -96,3 +96,5 @@ theme: phantom
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
+favicon: favicon.ico
