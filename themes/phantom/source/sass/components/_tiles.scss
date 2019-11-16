@@ -8,7 +8,7 @@
 
 	.tiles {
 		$gutter: _size(gutter);
-		$duration: 0.5s;
+		$duration: 0.2s;
 		$ease: 'ease';
 
 		@include vendor('display', 'flex');
@@ -255,4 +255,3 @@
 			}
 		}
 	}
-
