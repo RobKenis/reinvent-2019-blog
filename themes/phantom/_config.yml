@@ -31,7 +31,7 @@ show_dates:
 # Comments. Choose one by filling up the information
 comments:
   # Disqus comments
-  disqus_shortname: klugjo
+  disqus_shortname: reinvent2019
   # Facebook comments
   facebook:
     appid:
