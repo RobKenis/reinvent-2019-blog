@@ -9,54 +9,18 @@
 	#footer {
 		$gutter: _size(gutter);
 
-		@include padding(5em, 0, (0, 0, 3em, 0));
+		@include padding(2em, 0, (0, 0, 2em, 0));
 		background-color: _palette(bg-alt);
 
 		> .inner {
 			@include vendor('display', 'flex');
 			@include vendor('flex-wrap', 'wrap');
-			@include vendor('flex-direction', 'row');
+      @include vendor('flex-direction', 'row');
+      @include vendor('justify-content', 'center');
 
 			> * > :last-child {
 				margin-bottom: 0;
-			}
-
-			section:nth-child(1) {
-				width: calc(66% - #{$gutter});
-				margin-right: $gutter;
-			}
-
-			section:nth-child(2) {
-				width: calc(33% - #{$gutter});
-				margin-left: $gutter;
-			}
-
-			.copyright {
-				width: 100%;
-				padding: 0;
-				margin-top: 5em;
-				list-style: none;
-				font-size: 0.8em;
-				color: transparentize(_palette(fg), 0.5);
-
-				a {
-					color: inherit;
-				}
-
-				li {
-					display: inline-block;
-					border-left: solid 1px transparentize(_palette(fg), 0.85);
-					line-height: 1;
-					padding: 0 0 0 1em;
-					margin: 0 0 0 1em;
-
-					&:first-child {
-						border-left: 0;
-						padding-left: 0;
-						margin-left: 0;
-					}
-				}
-			}
+      }
 		}
 
 		@include breakpoint(large) {
