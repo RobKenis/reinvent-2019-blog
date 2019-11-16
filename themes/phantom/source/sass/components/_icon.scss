@@ -47,4 +47,31 @@
 				background-color: transparentize(_palette(accent1), 0.9);
 			}
 		}
+
+		&.style3 {
+			@include vendor('transition', (
+				'background-color #{_duration(transition)} ease-in-out',
+				'color #{_duration(transition)} ease-in-out',
+				'border-color #{_duration(transition)} ease-in-out'
+			));
+			width: 2em;
+			height: 2em;
+			display: inline-block;
+			text-align: center;
+			line-height: 2em;
+			color: inherit;
+
+			&:before {
+				font-size: 1.1em;
+			}
+
+			&:hover {
+				color: _palette(accent1);
+				border-color: _palette(accent1);
+			}
+
+			&:active {
+				background-color: transparentize(_palette(accent1), 0.9);
+			}
+		}
 	}
