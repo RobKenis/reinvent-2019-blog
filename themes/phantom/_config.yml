@@ -1,8 +1,8 @@
 # Header
-menu:
-  Home: /
-  Archives: /archives
-  About: /about.html
+# menu:
+#   Home: /
+#   Archives: /archives
+#   About: /about.html
 
 # Logo Image Source
 logo_src: /images/logo.png
