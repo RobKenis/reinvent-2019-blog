@@ -2,7 +2,8 @@
 title: {{ title }}
 date: {{ date }}
 tags:
+cover_index: 2019/12/DAY/TITLE/index.png # TODO: make date and title dynamic
 ---
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+{% asset_img banner.png "Description goes here" %}
+
 _write introduction here_
-<!-- more -->
