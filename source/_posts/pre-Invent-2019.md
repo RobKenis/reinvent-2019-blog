@@ -21,11 +21,14 @@ So you've been writing reusable code for a while now. Or so you thought. To send
 [Read more](https://aws.amazon.com/blogs/compute/introducing-aws-lambda-destinations/) about Lambda destinations.
 
 ### Java 11
-With the release of Java 13 last september, it hit me that the bigger part of my production code is written in Java8. This isn't a bad thing, since Java8 still has a couple years of support, but it got me thinking about why it was still so far behind. One of the major reasons was the lack of Java11 support for [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/). For lambda, this was not a problem, as my production lambda's are written in either nodejs or python. Well...AWS fixed both problems at once with the [release of Java 11 support for Beanstalk](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-elastic-beanstalk-launches-public-beta-corretto-al2-platforms/) and [Java 11 support for Lambda](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-lambda-supports-java-11/). So go ahead and start writing those fancy Java 11 applications.
+With the release of Java 13 last september, it hit me that the bigger part of my production code is written in Java8. This isn't a bad thing, since Java8 still has a couple years of support, but it got me thinking about why it was still so far behind. One of the major reasons was the lack of Java11 support for [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/). For lambda, this was not a problem, as my production lambda's are written in either Nodejs or Python. Well...AWS fixed both problems at once with the [release of Java 11 support for Beanstalk](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-elastic-beanstalk-launches-public-beta-corretto-al2-platforms/) and [Java 11 support for Lambda](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-lambda-supports-java-11/). So go ahead and start writing those fancy Java 11 applications.
 
 ### Cloudwatch ServiceLens
 
 ### Amazon CDK now availble for Java and C#
+AWS CloudFormation, one of the most glorious things Amazon has to offer, can be a pain sometimes. Writing your configuration in YAML or json can become a massive file that will become hard to read after a while. Some frameworks, like [Troposphere](https://github.com/cloudtools/troposphere) and [Serverelss](https://serverless.com/), are doing a great job at relieving the pain and make resource configuration fun again. So last re:Invent, AWS came up with their own framework, the [Cloud Development Kit](https://aws.amazon.com/cdk/). A tool for Python or Typescript to help with resource configuration and make the world a better place, who could ask for more? So the Java and C# developers united and asked for more; And AWS delivered, introducing Java and C# support for the CDK.
+
+[Read more](https://aws.amazon.com/blogs/aws/aws-cloud-development-kit-cdk-java-and-net-are-now-generally-available/) about CDK for Java and C#.
 
 ### Cloudwatch Synthetics
 
