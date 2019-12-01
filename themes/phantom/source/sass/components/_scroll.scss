@@ -1,0 +1,40 @@
+///
+/// Phantom by HTML5 UP
+/// html5up.net | @n33co
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* List */
+
+	.scroll {
+		align-items: center;
+		background: _palette(accent1);
+		border: 0;
+		border-radius: 50px;
+		bottom: 30px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0,0,0,.12);
+		display: flex;
+		font-size: 2em;
+		height: 50px;
+		justify-content: center;
+		position: fixed;
+		right: 30px;
+		width: 50px;
+
+		span {
+			color: _palette(bg);
+			margin-top: -5px;
+		}
+
+		&:hover {
+			background: darken(_palette(accent1), 5);
+
+			span {
+				color: _palette(bg);
+			}
+		}
+
+		@include breakpoint(large) {
+			display: none;
+		}
+	}
