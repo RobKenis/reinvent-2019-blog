@@ -12,4 +12,13 @@
 		@include breakpoint(small) {
 			@include padding(3em, 0, (-3em, 0, 3em, 0));
 		}
+
+		p:first-of-type {
+			text-align: justify;
+		}
+
+		img {
+			max-width: 100%;
+			margin: 0 0 _size(element-margin) 0;
+		}
 	}
