@@ -1,0 +1,11 @@
+<a href="#/" class="scroll">
+    <span>&#8593;</span>
+</a>
+
+<script>
+    document.querySelector('.scroll').addEventListener('click', function (event) {
+        window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+        history.pushState('', document.title, window.location.pathname + window.location.search);
+        event.preventDefault();
+    });
+</script>

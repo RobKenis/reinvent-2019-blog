@@ -60,6 +60,7 @@
 	@import 'components/archives';
 	@import 'components/pagination';
 	@import 'components/gallery';
+	@import 'components/scroll';
 	@import 'components/share';
 
 // Layout.
@@ -67,5 +68,6 @@
 	@import 'layout/header';
 	@import 'layout/menu';
 	@import 'layout/main';
+	@import 'layout/content';
 	@import 'layout/footer';
 	@import 'layout/wrapper';
