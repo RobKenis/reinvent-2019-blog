@@ -9,18 +9,19 @@ The wait is over, re:Invent is around the corner. Just like me, most AWS teams c
 {% asset_img reinvent-banner.png "AWS re:Invent" %}
 
 ## Top 5 new features
-1. AWS Lambda destinations
-2. Java 11
-3. Cloudwatch ServiceLens
-4. Amazon CDK now available for Java and C#
-5. Cloudwatch Synthetics
+1. [AWS Lambda destinations](#AWS-Lambda-destinations)
+2. [Java 11](#Java-11)
+3. [Cloudwatch ServiceLens](#Cloudwatch-ServiceLens)
+4. [Amazon CDK now available for Java and C#](#Amazon-CDK-now-available-for-Java-and-C#)
+5. [Cloudwatch Synthetics](#Cloudwatch-Synthetics)
 
 ### AWS Lambda destinations
-So you've been writing reusable code for a while now. Or so you thought, to send your response to a consumer (e.g. SQS), you still had to write code to deliver the message spcifically to that consumer. To mitigae this problem, AWS introduced [Lambda destinations](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-lambda-supports-destinations-for-asynchronous-invocations/), a solution to send a lambda result to a consumer without writing code. These consumers include: Lambda, SNS, SQS standard queue and Amazon EventBridge. Besides decoupling a part of your infrastructure, Lambda Destinations are supported in [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html](CloudFormation) right from the start. *(At the time of writing, DestinationConfig was not yet added to the CloudFormation documentation).* 
+So you've been writing reusable code for a while now. Or so you thought. To send your response to a consumer (e.g. SQS), you still had to write code to deliver the message spcifically to that consumer. To mitigate this problem, AWS introduced [Lambda destinations](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-lambda-supports-destinations-for-asynchronous-invocations/), a solution to send a lambda result to a consumer without writing code. These consumers include: Lambda, SNS, SQS standard queue and Amazon EventBridge. Besides decoupling a part of your infrastructure, Lambda Destinations are supported in [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-function.html() right from the start. *(At the time of writing, DestinationConfig was not yet added to the CloudFormation documentation).*
+
 [Read more](https://aws.amazon.com/blogs/compute/introducing-aws-lambda-destinations/) about Lambda destinations.
 
 ### Java 11
-With the release of Java 13 last september, it hit me that the bigger part of my production code is written in Java8. This isn't a bad thing, since Java8 still has a couple years of support, but it got me thinking about why it was still so far behind. One of the major reasons was the lack of Java11 support for [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/). For lambda, this was not a problem, as my production lambda's are written in either nodejs or python. Well...AWS fixed both problems at once with the [release of Java 11 support for Beanstalk](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-elastic-beanstalk-launches-public-beta-corretto-al2-platforms/) and [Java11 support for Lambda](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-lambda-supports-java-11/). So go ahead and start writing those fancy Java11 applications.
+With the release of Java 13 last september, it hit me that the bigger part of my production code is written in Java8. This isn't a bad thing, since Java8 still has a couple years of support, but it got me thinking about why it was still so far behind. One of the major reasons was the lack of Java11 support for [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/). For lambda, this was not a problem, as my production lambda's are written in either nodejs or python. Well...AWS fixed both problems at once with the [release of Java 11 support for Beanstalk](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-elastic-beanstalk-launches-public-beta-corretto-al2-platforms/) and [Java 11 support for Lambda](https://aws.amazon.com/about-aws/whats-new/2019/11/aws-lambda-supports-java-11/). So go ahead and start writing those fancy Java 11 applications.
 
 ### Cloudwatch ServiceLens
 
