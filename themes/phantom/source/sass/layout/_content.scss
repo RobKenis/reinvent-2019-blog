@@ -1,0 +1,18 @@
+///
+/// Phantom by HTML5 UP
+/// html5up.net | @n33co
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Content */
+
+	.content {
+		p:first-of-type {
+			text-align: justify;
+		}
+
+		img {
+			max-width: 100%;
+			margin: 0 0 _size(element-margin) 0;
+		}
+	}
