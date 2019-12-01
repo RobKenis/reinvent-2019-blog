@@ -4,9 +4,9 @@ title: 'AWS pre:Invent 2019'
 date: 2019-12-01 11:45:00
 tags:
 ---
-The wait is over, re:Invent is around the corner. Just like me, most AWS teams cannot contain their excitement and have started releasing new features. This week leading up to re:Invent, also known as *AWS pre:Invent* is all about the new features that didn't make the keynote. But this doesn't mean they're not worth mentioning, so let's run over our top 5 of most heathwarming new features.
-
 {% asset_img reinvent-banner.png "AWS re:Invent" %}
+
+The wait is over, re:Invent is around the corner. Just like me, most AWS teams cannot contain their excitement and have started releasing new features. This week leading up to re:Invent, also known as *AWS pre:Invent* is all about the new features that didn't make the keynote. But this doesn't mean they're not worth mentioning, so let's run over our top 5 of most heathwarming new features.
 
 ## Top 5 new features
 1. [AWS Lambda destinations](#AWS-Lambda-destinations)
