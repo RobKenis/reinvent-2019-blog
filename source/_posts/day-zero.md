@@ -2,6 +2,7 @@
 title: Day Zero
 cover_index: 2019/12/01/day-zero/index.jpg
 date: 2019-12-01 15:57:18
+tile_color: '#fea832'
 tags:
 ---
 {% asset_img banner.jpg "Welcome to Las Vegas" %}
@@ -14,7 +15,7 @@ We got through security. Kenneth got his deodorant taken away, which made him ve
 {% asset_img notourplane.jpg "Not our plane" %}
 
 ### Concrete jungle, wet dream, tomato
-About 8 hours later, we landed in New York. Some people applauded, which reminded me that very few people applaud when I deploy to production. *Note to self: mention this in retrospective.* We were also very extatic, until we had to wait in line for border control, which seemed like a massive wall holding us back. 
+About 8 hours later, we landed in New York. Some people applauded, which reminded me that very few people applaud when I deploy to production. *Note to self: mention this in retrospective.* We were also very extatic, until we had to wait in line for border control, which seemed like a massive wall holding us back.
 The waiting in line was all worth it, because we got through security without causing any problems. Us getting through so quickly, resulted in 2 extra hours of waiting. Being the problem solvers that we are, we sat in bar and enjoyed some fine beer and chicken taquitos. That was 70 dollars well spent.
 
 ## New York <i class="icon fa-plane"></i> Las Vegas
