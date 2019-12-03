@@ -118,5 +118,11 @@ Add CodeGuru to pull request (CodeCommit and GitHub) as reviewer. Then CodeGuru 
 Detects AWS best practices like pagination and exception handling. Detects concurrency issues with non threadsafe classes. Incorrect handing of for example streams that can lead to injection attacks. 
 CodeGuru profiler: Where can we find the most expensive lines of code. Intall an agent on the application that identifies CPU utilization and latency to help identify the most critical lines that can use optimization. CodeGuru creates a profile every 5 minutes.
 
+## Contact Lens for Amazon Connect NEW
+Generates analytics on Amazon Connect, which is a managed contact center. Contact Lens captures calls analyzes if the conversation was positive or negative. Create dashboards containing overall satisfaction. 
+
+## Amazon Kendra NEW
+Configure data sources like Jira, box and google drive. Optionally provide a set of FAQs. Then sync and index the data, Kendra pulls in all data and builds an index. Kendra finds concepts and relations between content. Test and refine queries straight from the console. Deploy the Kendra web application or cut-past Kendra components in your existing application. Some natural language processing can understand questions like 'When is the helpdesk opened' to provide answers to your questions instead of some terrible confluence page.  
+
 
 *Rewatch the Andy Jassy keynote*
