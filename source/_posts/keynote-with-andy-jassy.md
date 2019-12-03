@@ -142,4 +142,7 @@ With 5G, bring the processing out to the edge.
 Build applications that bring single-digit ms latency right as the edge embedded in 5G. Fewer hops to go from the device to the service. Right at the city aggregation site is AWS. 
 *This part ended with an awkward hug around 10:47*
 
+# Conclusion
+A lot of people get nervous about change. It's scary how far behind you can become in a very short period of time. With what the cloud offers, you can build things that were never possible before. That is an opportunity unlike any other.
+
 *Rewatch the Andy Jassy keynote*
