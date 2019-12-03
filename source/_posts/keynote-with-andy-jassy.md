@@ -57,29 +57,28 @@ So you finally figured out how to implement security and access control on your 
 [Read more](https://aws.amazon.com/blogs/aws/easily-manage-shared-data-sets-with-amazon-s3-access-points/) about S3 access points
 
 ## Databases
+> Not your father's database. - Andy Jassy, 2019
 ### Redshift RA3 instances with Managed Storage **NEW**
-Scale redshift instances with more storage without needing to scale to more compute power. 
+<!-- Scale redshift instances with more storage without needing to scale to more compute power. 
 Pay-per-hour for compute and pay separately for storage. Only pay for what you use. 
 > It's hard to scale without compromising performance. 
-SSD throughput is scaling at a way faster rate than CPU processing rate. 
+SSD throughput is scaling at a way faster rate than CPU processing rate.  -->
+`Disk will fill in 12 hours`. Your pages beeps, your heart rate rises, this alert sends shivers down your spine. You've been trained for this, you know what to do, so you turn on your laptop and open the AWS console. You navigate to the Redshift console and look for a way to increase disk space. And then it hits you, you have to increase the instance type aswell. This doesn't have to be reality, luckily AWS had the same thoughts. With the new [RA3 instances](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/), you can scale storage and compute independently.
 
-## AQUA NEW
-- Advanced Query Accelerator
-Hardware accelerated cache. Move the compute to the storage. 
-This delivers 10x better query performance than anywhere else. 
+### Performance
+It's hard to scale without compromising performance. SSD throughput is scaling at a way faster rate than CPU processing rate.
+#### Advanced Query Accelerator **NEW**
+Hardware accelerated cache. Move the compute to the storage. This delivers 10x better query performance than anywhere else. 
 
-## ElasticSearch Service
-*Please let it be Cloudwatch Kibana*
-### UltraWarm NEW
-Scale up to 3 PB of log data per cluster. 
-Move unused data to S3. Save 90% of costs compared to what you do in ES today. 
-If a query needs to pull data from S3, some nitro magic make the data accessible very quickly. 
+### ElasticSearch Service
+> Please let it be Cloudwatch Kibana 🤞 - Kenneth De Win, 2019
+#### UltraWarm **NEW**
+Scale up to 3 PB of log data per cluster. Move unused data to S3. Save 90% of costs compared to what you do in ES today. If a query needs to pull data from S3, some Nitro magic make the data accessible very quickly. 
 
-## Databases
-> Not your father's database
-*Please be managed Casandra*
-### Preview of Amazon Managed Cassandra Service NEW
-No clusters to be managed, pay on demand, uses same Cassandra drivers.
+### Cassandra
+> Please be managed Casandra 🤞 - Rob Kenis, 2019
+#### Preview of Amazon Managed Cassandra Service **NEW**
+No clusters to be managed, pay on demand, uses same Cassandra drivers. There's not much more to it. Finally use Cassandra without contemplating your career as a developer.
 
 ## Machine learning
 Machine learning continues to grow on AWS. 
