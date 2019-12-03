@@ -124,5 +124,22 @@ Generates analytics on Amazon Connect, which is a managed contact center. Contac
 ## Amazon Kendra NEW
 Configure data sources like Jira, box and google drive. Optionally provide a set of FAQs. Then sync and index the data, Kendra pulls in all data and builds an index. Kendra finds concepts and relations between content. Test and refine queries straight from the console. Deploy the Kendra web application or cut-past Kendra components in your existing application. Some natural language processing can understand questions like 'When is the helpdesk opened' to provide answers to your questions instead of some terrible confluence page.  
 
+## AWS Outposts
+Generally available today with Compute, Databases, Storage and more. *S3 coming soon* 
+## AWS Local Zones NEW
+Extension of an AWS region. AWS managed buildings with outputs close to you, so you can have single-digit latency with AWS workloads. 
+
+## 5G
+8 currencies:
+- Speed is going up to 10Gb per second
+- Latency goes down to 10ms
+- Connect 10 million devices instead of 100 thousand
+- ...
+*(4G only had 2: speed and throughput)*
+With 5G, bring the processing out to the edge. 
+
+## AWS Wavelength NEW
+Build applications that bring single-digit ms latency right as the edge embedded in 5G. Fewer hops to go from the device to the service. Right at the city aggregation site is AWS. 
+*This part ended with an awkward hug around 10:47*
 
 *Rewatch the Andy Jassy keynote*
