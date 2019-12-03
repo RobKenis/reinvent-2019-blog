@@ -59,20 +59,20 @@ Simplifies managing data access. Assign a different access policy per applicatio
 ## Spectre
 Query across redshift, S3 and operational databases.
 
-## Redshift RA3 instances with Managed Storage
+## Redshift RA3 instances with Managed Storage NEW
 Scale redshift instances with more storage without needing to scale to more compute power. 
 Pay-per-hour for compute and pay separately for storage. Only pay for what you use. 
 > It's hard to scale without compromising performance. 
 SSD throughput is scaling at a way faster rate than CPU processing rate. 
 
-## AQUA 
+## AQUA NEW
 - Advanced Query Accelerator
 Hardware accelerated cache. Move the compute to the storage. 
 This delivers 10x better query performance than anywhere else. 
 
 ## ElasticSearch Service
 *Please let it be Cloudwatch Kibana*
-### UltraWarm
+### UltraWarm NEW
 Scale up to 3 PB of log data per cluster. 
 Move unused data to S3. Save 90% of costs compared to what you do in ES today. 
 If a query needs to pull data from S3, some nitro magic make the data accessible very quickly. 
@@ -80,9 +80,37 @@ If a query needs to pull data from S3, some nitro magic make the data accessible
 ## Databases
 > Not your father's database
 *Please be managed Casandra*
-### Preview of Amazon Managed Cassandra Service
+### Preview of Amazon Managed Cassandra Service NEW
 No clusters to be managed, pay on demand, uses same Cassandra drivers.
 
 ## Machine learning
 Machine learning continues to grow on AWS. 
+Layers (of difficulty):
+    - Frameworks for machine learning. TensorFlow, PyTorch and MXNet
+        - AWS optmized TensorFlow is 20% faster than any other option (some very fancy private hardware not open to the public)
+        - Optimized PyTorch is 22% faster, just like MXNet
+    - SageMaker
+        *Grab a screenshot around 9:45*
+        - NEW: SageMaker Studio. Fully integrated development enviroment for SageMaker magic. Web-based IDE. This makes it much easier to write models.
+        - NEW: SageMaker notebooks: one-click notebooks with Elatic Compute. No instances to provision, increase or decrease compute resources without interruption. 
+        - NEW: SageMaker Experiments: Tuning models automatically. 
+        - NEW: SageMaker Debugger: Real-time metrics of model performance, help understand and interprete models. Results can be viewed in SageMaker Studio. 
+        > Looking at a model is like looking at a compiled binary. It makes no sense to the naked eye.
+        - NEW: SageMaker Model Monitor: Detect concept drift in deployed models. Analyze and visualize models so you can detect concept drift.
+### AutoML models
+data -> *magic* -> model
+Customers want automatic models with more insight in the actual model
+#### SageMaker Autopilot NEW
+Provide a csv with training data, Autopilot trains 50 unique models. SageMaker provides all the notebooks so you can tell how it actually works. All algorithms are ranked in a model leaderboard so you can choose which one you want. Autopilot gives you full control to tweak the models. 
+> SageMaker studio is a giant leap forward being the first machine learning IDE
+Collect all data and put a csv in S3. Create a new autopilot project in SageMaker Studio with the csv. SageMaker starts training 50 models and gives you an overview so you can pick the best one. You can look at the exact algorithms used by Autopilot with the Debugger information provided by SageMaker Debugger. After you pick your favorite model, you can deploy it right from SageMaker Studio. If SageMaker monitor finds any drift, it gives you an alert so you can train another set of models with new, fresh data. 
 
+    - 3rd layer: AI Services
+
+### Challenges of Fraud detection
+Detecting fraud is very expensive and doesn't scale well because it uses little to no ML.
+- Amazon Fraud Detector NEW
+Send AWS your transactions and purchase history, they build a unique model for you.  That model will detect certain email domains for example based on the Amazon experience in fraud detection. These models will give you a fraud scoring on certain events. 
+
+
+*Rewatch the Andy Jassy keynote*
