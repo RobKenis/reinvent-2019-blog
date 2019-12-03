@@ -112,5 +112,11 @@ Detecting fraud is very expensive and doesn't scale well because it uses little 
 - Amazon Fraud Detector NEW
 Send AWS your transactions and purchase history, they build a unique model for you.  That model will detect certain email domains for example based on the Amazon experience in fraud detection. These models will give you a fraud scoring on certain events. 
 
+## Amazon CodeGuru NEW
+Automatic code reviews and identify most expensive lines of code.
+Add CodeGuru to pull request (CodeCommit and GitHub) as reviewer. Then CodeGuru goes over a couple models based on thousands of the most popular open source projects.
+Detects AWS best practices like pagination and exception handling. Detects concurrency issues with non threadsafe classes. Incorrect handing of for example streams that can lead to injection attacks. 
+CodeGuru profiler: Where can we find the most expensive lines of code. Intall an agent on the application that identifies CPU utilization and latency to help identify the most critical lines that can use optimization. CodeGuru creates a profile every 5 minutes.
+
 
 *Rewatch the Andy Jassy keynote*
