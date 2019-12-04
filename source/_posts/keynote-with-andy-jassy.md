@@ -96,7 +96,7 @@ One-click notebooks with Elatic Compute. No instances to provision, increase or 
 #### SageMaker Experiments **NEW**
 Creating and training a new model requires a lot of little tweaks and fixes. [SageMaker Experiments](https://aws.amazon.com/blogs/aws/amazon-sagemaker-experiments-organize-track-and-compare-your-machine-learning-trainings/) makes this process fun again.
 #### SageMaker Debugger **NEW**
-Real-time metrics of model performance, help understand and interprete models. Results can be viewed in SageMaker Studio.
+Real-time metrics of model performance, help understand and interpret models. Results can be viewed in SageMaker Studio.
 > Looking at a model is like looking at a compiled binary. It makes no sense to the naked eye. - Andy Jassy, 2019
 #### SageMaker Model Monitor **NEW**
 Your model might have been pretty accurate last year, but something changed and now your results are far from reality. Detect concept drift in deployed models with [SageMaker Model Monitory](https://aws.amazon.com/blogs/aws/amazon-sagemaker-model-monitor-fully-managed-automatic-monitoring-for-your-machine-learning-models/). Analyze and visualize models so you can detect concept drift.
