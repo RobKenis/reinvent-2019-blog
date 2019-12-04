@@ -32,7 +32,7 @@ The famous webhook, call something when something happens. Limit Lambda concurre
 Use fanout to leverage multiple consumers for pretty fast processing. Verify signature of SNS messages to make sure the message effectively came from SNS. Default SNS broadcasts messages to all consumers. Use messages filtering by consuming only messages with a certain message attribute. Compress and aggregate messages when possible. Consider *KINESIS* if possible for larger payloads.
 
 ### They say "I'm a streamer"
-Enable source stream record backup for kinesis firehose without invoking a Lambda. Favor dedicated Data Firehose per context. Obfuscate sensitive data. Use parquet transformation at stream level. Transform payload at stream level from JSON to parquet for example to be used with Athena. Use message filtering to prevent unwanted events.
+Enable source stream record backup for kinesis firehose without invoking a Lambda. Favor dedicated Data Firehose per context. Obfuscate sensitive data. Use parquet transformation at stream level. Transform payload at stream level from [JSON](https://www.json.org/json-en.html) to [parquet](https://en.wikipedia.org/wiki/Parakeet) for example to be used with Athena. Use message filtering to prevent unwanted events.
 
 [Learn more](https://aws.amazon.com/blogs/networking-and-content-delivery/global-data-ingestion-with-amazon-cloudfront-and-Lambdaedge/) about global data ingestion to Kinesis.
 
