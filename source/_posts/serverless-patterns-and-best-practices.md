@@ -5,7 +5,7 @@ tile_color: '#f1e57a'
 date: 2019-12-03 11:49:50
 tags:
 ---
-{% asset_img banner.png "Serverless best practices" %}
+{% asset_img banner.jpg "Serverless patterns and best practices" %}
 
 ## Operational responsibility model
 Not everything will be serverelss, most of the time, it will be mix and match. 'Create a serverless application' from the console became easy as 🥧.
@@ -36,7 +36,11 @@ Enable source stream record backup for kinesis firehose without invoking a lambd
 [Learn more](https://aws.amazon.com/blogs/networking-and-content-delivery/global-data-ingestion-with-amazon-cloudfront-and-lambdaedge/) about global data ingestion to Kinesis
 
 ### The "Strangler"
+<<<<<<< HEAD
 Use an API to abstract implementaion details, which makes it easier to move parts behind the api. Centralize logs, metrics and tracing. Enforce authorization on the top level of on-premise mainframes, most of the times this will be Active Directory. [Learn more](https://www.ad.nl/) about AD. Gradually shift functionalities to new compute and database platforms. Don't straight up move everything to lambda, gradually do this to avoid disruption. 
+=======
+Use an API to abstract implementaion details, which makes it easier to move parts behind the api. Centralize logs, metrics and tracing. Enforce authorization on the top level, most of the times this will be AD. *Read more about AD joke*. Gradually shift functionalities to new compute and database platforms. Dont straight up move everything to lambda, gradually do this to avoid disruption.
+>>>>>>> 44e68e1d216a03c976c164b102a1edc4a0630525
 
 ##### Usefull resources
 https://github.com/aws-samples/aws-serverless-airline-booking
