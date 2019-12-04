@@ -100,7 +100,8 @@ Real-time metrics of model performance, help understand and interprete models. R
 Your model might have been pretty accurate last year, but something changed and now your results are far from reality. Detect concept drift in deployed models with [SageMaker Model Monitory](https://aws.amazon.com/blogs/aws/amazon-sagemaker-model-monitor-fully-managed-automatic-monitoring-for-your-machine-learning-models/). Analyze and visualize models so you can detect concept drift.
 
 ### AutoML models
-data -> 🧙 -> model
+tl;dr: Data -> 🧙 -> Model.
+
 Customers want automatic models with more insight in the actual model.
 #### SageMaker Autopilot **NEW**
 Provide a csv with training data, Autopilot trains 50 unique models. SageMaker provides all the notebooks so you can tell how it actually works. All algorithms are ranked in a model leaderboard so you can choose which one you want. Autopilot gives you full control to tweak the models.
@@ -108,35 +109,36 @@ Provide a csv with training data, Autopilot trains 50 unique models. SageMaker p
 
 Collect all data and put a csv in S3. Create a new autopilot project in SageMaker Studio with the csv. SageMaker starts training 50 models and gives you an overview so you can pick the best one. You can look at the exact algorithms used by Autopilot with the Debugger information provided by SageMaker Debugger. After you pick your favorite model, you can deploy it right from SageMaker Studio. If SageMaker monitor finds any drift, it gives you an alert so you can train another set of models with new, fresh data.
 
-### AI Services
-Fully managed AWS services like [Rekognition](https://aws.amazon.com/rekognition/) and [Polly](https://aws.amazon.com/polly/). Nothing new this year. [Learn more](https://aws.amazon.com/machine-learning/ai-services/)
+## AI Services
 
 ### Challenges of Fraud detection
 Detecting fraud is very expensive and doesn't scale well because it uses little to no ML.
+
 #### Amazon Fraud Detector **NEW**
 Send AWS your transactions and purchase history, they build a unique model for you.  That model will detect certain email domains for example based on the Amazon experience in fraud detection. These models will give you a fraud scoring on certain events.
 
-## Amazon CodeGuru **NEW**
-Automatic code reviews and identify most expensive lines of code.
-Add CodeGuru to pull request (CodeCommit and GitHub) as reviewer. Then CodeGuru goes over a couple models based on thousands of the most popular open source projects.
-Detects AWS best practices like pagination and exception handling. Detects concurrency issues with non threadsafe classes. Incorrect handing of for example streams that can lead to injection attacks.
-CodeGuru profiler: Where can we find the most expensive lines of code. Intall an agent on the application that identifies CPU utilization and latency to help identify the most critical lines that can use optimization. CodeGuru creates a profile every 5 minutes.
+### Amazon CodeGuru **NEW**
+Amazon CodeGuru is a machine learning service for automated code reviews and application performance recommendations. It helps you find the most expensive lines of code that hurt application performance and keep you up all night troubleshooting, then gives you specific recommendations to fix or improve your code. You can "call" CodeGuru by adding it as a reviewer on your Pull Request (currently only CodeCommit and GitHub). It then checks your code based on learning models that are trained on Amazon’s code bases comprising hundreds of thousands of internal projects, as well as over 10,000 open source projects in GitHub.
 
-## Contact Lens for Amazon Connect **NEW**
+CodeGuru only supports Java applications today, with support for more languages coming soon.
+
+### Contact Lens for Amazon Connect **NEW**
 Generates analytics on Amazon Connect, which is a managed contact center. Contact Lens captures calls and analyzes if the conversation was positive or negative. With enough data, you can create dashboards containing overall satisfaction.
 
-## Amazon Kendra **NEW**
+### Amazon Kendra **NEW**
 Amazon Kendra is a highly accurate and easy to use enterprise search service that’s powered by machine learning. Kendra delivers search capabilities to your website or application. Kendra lets you easily add content from file systems or external data sources like Jira or Google Drive. You can also provide a set of FAQs to make it even easier for your users. After uploading the data, Kendra syncs and indexes the data. It'll find concepts and relations between content. The Kendra console offers the ability to test and refine queries. Deploy the Kendra web application or include Kendra (UI) components in your existing application. Natural language enables you to get more specific answers from anywhere in your data. Ask questions like, “Is the IT help desk open at noon?” or “How do I connect to my VPN?” so you can get more precise answers, instead of some terrible confluence page.
 
-## AWS Outposts
+## AWS Infrastructure in your backyard
+
+### AWS Outposts
 AWS Outposts is a fully managed service that extends AWS infrastructure, AWS services, APIs and tools to virtually any datacenter or on-premises facility for a truly consistent hybrid experience. AWS Outposts is ideal for workloads that require low latency access to on-premises systems, local data processing, or local data storage.
 
 With AWS Outposts you can run Amazon EC2, Amazon EBS or Amazon RDS in your on-premise infrastructue. Amazon S3 will be available in 2020.
 
-## AWS Local Zones **NEW**
+### AWS Local Zones **NEW**
 A Local Zone is a new type of AWS infrastructure deployment that brings a couple of AWS services very close to a particular geographic area. It's basically a smaller and more local version of an AWS region. They're designed to provide very low (single-digit milliseconds) latency to applications. Right now, they're only available in Los Angeles, but AWS will expand to other locations in 2020.
 
-## AWS Wavelength **NEW**
+### AWS Wavelength **NEW**
 AWS Wavelength enables you to build applications that serve mobile devices with single-digit millisecond latencies over 5G networks. These applications can include games, live video streaming or virtual reality. It brings AWS services to the edge of the 5G network, minimizing the network hops and latency to connect to an application from a 5G device.
 
 <!-- This part ended with an awkward hug around 10:47 -->
