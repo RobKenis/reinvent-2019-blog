@@ -38,8 +38,8 @@
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
-		font-weight: _font(weight-bold);
+		color: _palette(accent1);
+		font-weight: _font(weight-bold-alt);
 	}
 
 	em, i {
@@ -94,19 +94,19 @@
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 0.9em;
 	}
 
 	h4 {
-		font-size: 0.8em;
+		font-size: 0.75em;
 	}
 
 	h5 {
-		font-size: 0.8em;
+		font-size: 0.75em;
 	}
 
 	h6 {
-		font-size: 0.8em;
+		font-size: 0.75em;
 	}
 
 	div.meta {
@@ -147,7 +147,11 @@
 		border-left: solid (_size(border-width) * 4) _palette(border);
 		font-style: italic;
 		margin: 0 0 _size(element-margin) 0;
-		padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
+		padding: 0 0 0 (_size(element-margin) / 2);
+
+		span {
+			font-style: normal;
+		}
 	}
 
 	code {
