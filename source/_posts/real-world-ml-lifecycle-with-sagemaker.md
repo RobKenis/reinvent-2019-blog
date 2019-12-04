@@ -20,3 +20,5 @@ Some people don't read comments and then fail horribly, like me.
 I have no idea what I'm doing, but things look promising.
 
 Conclusion: I have no idea wtf I'm doing, but it looks nice. The trained model is stored in S3, a service that I do understand (a bit).
+
+Do automated training based on a CW alarm that triggers a lambda that triggers retraining.
