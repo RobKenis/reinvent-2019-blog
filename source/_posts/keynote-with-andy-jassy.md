@@ -81,35 +81,42 @@ Scale up to 3 PB of log data per cluster. Move unused data to S3. Save 90% of co
 No clusters to be managed, pay on demand, uses same Cassandra drivers. There's not much more to it. Finally use Cassandra without contemplating your career as a developer.
 
 ## Machine learning
-Machine learning continues to grow on AWS. 
-Layers (of difficulty):
-    - Frameworks for machine learning. TensorFlow, PyTorch and MXNet
-        - AWS optmized TensorFlow is 20% faster than any other option (some very fancy private hardware not open to the public)
-        - Optimized PyTorch is 22% faster, just like MXNet
-    - SageMaker
-        *Grab a screenshot around 9:45*
-        - NEW: SageMaker Studio. Fully integrated development enviroment for SageMaker magic. Web-based IDE. This makes it much easier to write models.
-        - NEW: SageMaker notebooks: one-click notebooks with Elatic Compute. No instances to provision, increase or decrease compute resources without interruption. 
-        - NEW: SageMaker Experiments: Tuning models automatically. 
-        - NEW: SageMaker Debugger: Real-time metrics of model performance, help understand and interprete models. Results can be viewed in SageMaker Studio. 
-        > Looking at a model is like looking at a compiled binary. It makes no sense to the naked eye.
-        - NEW: SageMaker Model Monitor: Detect concept drift in deployed models. Analyze and visualize models so you can detect concept drift.
+Machine learning continues to grow on AWS. All types of developers like to try it sooner or later, this resulted in 3 layers of services.
+### Frameworks for machine learning. 
+AWS optmized TensorFlow is 20% faster than any other option (some very fancy private hardware not open to the public). Optimized PyTorch is 22% faster, just like MXNet.
+
+### SageMaker
+<!-- *Grab a screenshot around 9:45* -->
+#### SageMaker Studio **NEW**
+Fully integrated development enviroment for SageMaker magic. Web-based IDE. This makes it much easier to write models. [Read more](https://aws.amazon.com/blogs/aws/amazon-sagemaker-studio-the-first-fully-integrated-development-environment-for-machine-learning/)
+#### SageMaker notebooks **NEW**
+One-click notebooks with Elatic Compute. No instances to provision, increase or decrease compute resources without interruption. 
+#### SageMaker Experiments **NEW**
+Creating and training a new model requires a lot of little tweaks and fixes. [SageMaker Experiments](https://aws.amazon.com/blogs/aws/amazon-sagemaker-experiments-organize-track-and-compare-your-machine-learning-trainings/) makes this process fun again.
+#### SageMaker Debugger **NEW**
+Real-time metrics of model performance, help understand and interprete models. Results can be viewed in SageMaker Studio. 
+> Looking at a model is like looking at a compiled binary. It makes no sense to the naked eye. - Andy Jassy, 2019
+#### SageMaker Model Monitor **NEW**
+Your model might have been pretty accurate last year, but something changed and now your results are far from reality. Detect concept drift in deployed models with [SageMaker Model Monitory](https://aws.amazon.com/blogs/aws/amazon-sagemaker-model-monitor-fully-managed-automatic-monitoring-for-your-machine-learning-models/). Analyze and visualize models so you can detect concept drift.
+
 ### AutoML models
-data -> *magic* -> model
-Customers want automatic models with more insight in the actual model
-#### SageMaker Autopilot NEW
+data -> 🧙 -> model
+Customers want automatic models with more insight in the actual model.
+#### SageMaker Autopilot **NEW**
 Provide a csv with training data, Autopilot trains 50 unique models. SageMaker provides all the notebooks so you can tell how it actually works. All algorithms are ranked in a model leaderboard so you can choose which one you want. Autopilot gives you full control to tweak the models. 
-> SageMaker studio is a giant leap forward being the first machine learning IDE
+> SageMaker studio is a giant leap forward being the first machine learning IDE - Someone at AWS
+
 Collect all data and put a csv in S3. Create a new autopilot project in SageMaker Studio with the csv. SageMaker starts training 50 models and gives you an overview so you can pick the best one. You can look at the exact algorithms used by Autopilot with the Debugger information provided by SageMaker Debugger. After you pick your favorite model, you can deploy it right from SageMaker Studio. If SageMaker monitor finds any drift, it gives you an alert so you can train another set of models with new, fresh data. 
 
-    - 3rd layer: AI Services
+### AI Services
+Fully managed AWS services like [Rekognition](https://aws.amazon.com/rekognition/) and [Polly](https://aws.amazon.com/polly/). Nothing new this year. [Learn more](https://aws.amazon.com/machine-learning/ai-services/)
 
 ### Challenges of Fraud detection
 Detecting fraud is very expensive and doesn't scale well because it uses little to no ML.
-- Amazon Fraud Detector NEW
+#### Amazon Fraud Detector **NEW**
 Send AWS your transactions and purchase history, they build a unique model for you.  That model will detect certain email domains for example based on the Amazon experience in fraud detection. These models will give you a fraud scoring on certain events. 
 
-## Amazon CodeGuru NEW
+## Amazon CodeGuru **NEW**
 Automatic code reviews and identify most expensive lines of code.
 Add CodeGuru to pull request (CodeCommit and GitHub) as reviewer. Then CodeGuru goes over a couple models based on thousands of the most popular open source projects.
 Detects AWS best practices like pagination and exception handling. Detects concurrency issues with non threadsafe classes. Incorrect handing of for example streams that can lead to injection attacks. 
