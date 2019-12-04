@@ -5,12 +5,12 @@ tile_color: '#fea832'
 date: 2019-12-03 09:35:50
 tags:
 ---
-Automatin is key, wether you are provisioning your infrastructure or deploying your application. Save yourself the hassle of clicking in the AWS console for hours and hours. In this session, the benefits of [CloudFormation](https://aws.amazon.com/cloudformation/) and [Service Catalog](https://aws.amazon.com/servicecatalog/) are pointed out once again. 
+Automating is key, wether you are provisioning your infrastructure or deploying your application. Save yourself the hassle of clicking in the AWS console for hours and hours. In this session, the benefits of [CloudFormation](https://aws.amazon.com/cloudformation/) and [Service Catalog](https://aws.amazon.com/servicecatalog/) are pointed out once again.
 
-## Why automate ?
+## Why automate?
 Build fast, fail fast. Manual steps are mad slow.
 
-## What to automate ?
+## What to automate?
 ### Enable
 > It's always a day one. A new team, a new workload, a new developer...
 
@@ -19,11 +19,11 @@ Make the process of adopting a new accounts simpler and quicker by following the
 <!-- - Structure account layout (probably multiple accounts)
     - Create orginazations
     - Setup network infrastructure -->
-- Structure your account early on, as you will probably create multiple in the long run. Setup the required Organizations and start planning out your network infracstructure.
-- Make setting up accounts easier with [Control Tower](https://aws.amazon.com/controltower/). This thing simplifies 'day one' by setting up Landing zone, Single Sign-On and establishing guardrails. It defines how you want your teams to define and use resources. Prohibit the use of public S3 buckets or loadbalancers without *https* for example. Control Tower creates dashboards about the resources provisioned in the accounts, so you can spot the nasty ones and blame the developers that created them *look away scrum masters*.
+- Structure your account early on, as you will probably create multiple in the long run. Set up the required Organizations and start planning out your network infracstructure.
+- Make setting up accounts easier with [Control Tower](https://aws.amazon.com/controltower/). This thing simplifies 'day one' by setting up Landing zone, Single Sign-On and establishing guardrails. It defines how you want your teams to define and use resources. Prohibit the use of public S3 buckets or load balancers without *https* for example. Control Tower creates dashboards about the resources provisioned in the accounts, so you can spot the nasty ones and blame the developers that created them. *look away scrum masters*
 
 ### Provision
-CloudFormation all the things! Use stack sets to setup stack across multiple accounts and regions. If you stumble upon a stack that could be useful for other people, make it available in Service Catalog. 
+CloudFormation all the things! Use stack sets to setup stack across multiple accounts and regions. If you stumble upon a stack that could be useful for other people, make it available in Service Catalog.
 #### Automate governance at scale
 Setup Service Catalog in hub account, share a portfolio across the underlying accounts. This gives admins governance about resources and developers the speed to use the resources.
 
@@ -37,11 +37,11 @@ Monitor resources and workloads using Cloudwatch, audit resources configuration 
     - Only provide relevant portfolios for teams to reduce noise
     - Use guardrails like template constraints so teams can't deploy a GPU ec2 instance by accident
 - Systems Manager
-    - Configuraion-driven deployments using Parameter Store
-    - Remove ssh ingress to all production instances. Allow terminal access using Session Manager 
+    - Configuration-driven deployments using Parameter Store
+    - Remove ssh ingress to all production instances. Allow terminal access using Session Manager
 - Node rotations
     - Remove the need to patch
     - Golden AMI pipeline bakes the perfect ami. AMI id is set in parameter store that are referenced by CloudFormation
-    - If new ami is created, stacks are updated with new SSM reference so nodes are updated
+    - If a new ami is created, stacks are updated with new SSM reference so nodes are updated
 
 {% asset_img theatre.jpg "Venetian theatre" %}
