@@ -2,7 +2,7 @@
 title: Automate everything
 # cover_index: 2019/12/DAY/TITLE/index.jpg
 tile_color: '#fea832'
-date: 2019-12-03 09:35:50
+date: 2019-12-02 22:30:50
 tags:
 ---
 Automating is key, wether you are provisioning your infrastructure or deploying your application. Save yourself the hassle of clicking in the AWS console for hours and hours. In this session, the benefits of [CloudFormation](https://aws.amazon.com/cloudformation/) and [Service Catalog](https://aws.amazon.com/servicecatalog/) are pointed out once again.
