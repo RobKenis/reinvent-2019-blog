@@ -41,18 +41,18 @@ With the release of Fargate support for EKS, you can now run your Kubernetes wor
 On-premises cost a lot of money for the things you get. You have to spend a lot of money without getting the same features and security that the cloud can bring. Every industry is moving away from mainframes. They're slow, complicated and expensive. No one has mainframe knowledge anymore. Some companies pick the whole thing apart and launch them as microservices on AWS, some pick the things they need and move them to AWS. People are trying to move away from Oracle and SQL server; They're expensive. Microsoft is not prioritising what matters to the customers, look at all the damn licences. People are moving to open engines like MySQL, MariaDB and Postgres. AWS offers same performance with open engines using AuroraDB. It is the fastest growing service on AWS.
 
 #### Closing windows
-People are moving from Windows to Linux. People don't want to pay the price anymore for Windows. The Linux community is alot sophisticated. People are not very happy when one entity owns the operating system, looking at you, Bill Gates.
+People are moving from Windows to Linux. People don't want to pay the price anymore for Windows. The Linux community is a lot more sophisticated. People are not very happy when one entity owns the operating system. Looking at you, Bill Gates.
 
 ## Storage
 > Not your father's data requirements. - Andy Jassy, 2019
 
-Companies are moving from data silos to datalakes to make machine learning and analytics much easier. Data lakes are built on top of S3, because it is more reliable and scalable than anything else. Lots of this has to do with multi-AZ magic.  Other vendors offer low-grade availability zones because they're right next to eachother in the same building. S3 is the only object store to block public access on multiple levels and get an inventory on objects. It's the easiest object store to get data into through a million options.
+Companies are moving from data silos to datalakes to make machine learning and analytics much easier. Data lakes are built on top of S3, because it is more reliable and scalable than anything else. Lots of this has to do with multi-AZ magic. Other vendors offer low-grade availability zones because they're right next to eachother in the same building. S3 is the only object store to block public access on multiple levels and get an inventory on objects. It's the easiest object store to get data into through a million options.
 
 Read more about [S3 intelligent tiering](https://aws.amazon.com/about-aws/whats-new/2018/11/s3-intelligent-tiering/) and [S3 batch operations](https://aws.amazon.com/about-aws/whats-new/2018/11/s3-batch-operations/). [S3 deep archive](https://aws.amazon.com/blogs/aws/new-amazon-s3-storage-class-glacier-deep-archive/) costs less than a dollar per TB, which makes it the perfect candidate to store all your backups and other data that may take a while to retrieve, but must be stored for a long time.
 
 ### S3 access points **NEW**
 <!-- Simplifies managing data access. Assign a different access policy per application.  No more need to write a mile-long bucket policy.  -->
-So you finally figured out how to implement security and access control on your S3 buckets. Your bucket policy is a work of art and your consumer is working flawlessly. But then you need to add a second client, and a third, and before you know, your bucket policy is a mile long *(or 1,60934 kilometers for users of the proper metric system)*. Introducing S3 access points, AWS claims to simplify access control to your bucket over a variety of clients.
+So you finally figured out how to implement security and access control on your S3 buckets? Your bucket policy is a work of art and your consumer is working flawlessly? But then you need to add a second client, and a third, and before you know, your bucket policy is a mile long *(or 1,60934 kilometers for users of the proper metric system)*. Introducing S3 access points, AWS claims to simplify access control to your bucket over a variety of clients.
 
 [Read more](https://aws.amazon.com/blogs/aws/easily-manage-shared-data-sets-with-amazon-s3-access-points/) about S3 access points
 
@@ -63,7 +63,7 @@ So you finally figured out how to implement security and access control on your 
 Pay-per-hour for compute and pay separately for storage. Only pay for what you use.
 > It's hard to scale without compromising performance.
 SSD throughput is scaling at a way faster rate than CPU processing rate.  -->
-`Disk will fill in 12 hours`. Your pages beeps, your heart rate rises, this alert sends shivers down your spine. You've been trained for this, you know what to do, so you turn on your laptop and open the AWS console. You navigate to the Redshift console and look for a way to increase disk space. And then it hits you, you have to increase the instance type aswell. This doesn't have to be reality, luckily AWS had the same thoughts. With the new [RA3 instances](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/), you can scale storage and compute independently.
+`Disk will fill in 12 hours`. Your pager beeps, your heart rate rises, this alert sends shivers down your spine. You've been trained for this, you know what to do, so you turn on your laptop and open the AWS console. You navigate to the Redshift console and look for a way to increase disk space. And then it hits you: you have to increase the instance type aswell. This doesn't have to be reality and luckily AWS had the same thoughts. With the new [RA3 instances](https://aws.amazon.com/about-aws/whats-new/2019/12/amazon-redshift-announces-ra3-nodes-managed-storage/), you can scale storage and compute independently.
 
 ### Performance
 It's hard to scale without compromising performance. SSD throughput is scaling at a way faster rate than CPU processing rate.
@@ -71,19 +71,21 @@ It's hard to scale without compromising performance. SSD throughput is scaling a
 Hardware accelerated cache. Move the compute to the storage. This delivers 10x better query performance than anywhere else.
 
 ### ElasticSearch Service
-> Please let it be Cloudwatch Kibana 🤞 - Kenneth De Win, 2019
+> Please let it be Cloudwatch Kibana <span>🤞</span> - Kenneth De Win, 2019
 #### UltraWarm **NEW**
 Scale up to 3 PB of log data per cluster. Move unused data to S3. Save 90% of costs compared to what you do in ES today. If a query needs to pull data from S3, some Nitro magic make the data accessible very quickly.
+> <span>😭</span> - Kenneth De Win, 2019
 
 ### Cassandra
-> Please be managed Casandra 🤞 - Rob Kenis, 2019
+> Please be managed Casandra <span>🤞</span> - Rob Kenis, 2019
 #### Preview of Amazon Managed Cassandra Service **NEW**
 No clusters to be managed, pay on demand, uses same Cassandra drivers. There's not much more to it. Finally use Cassandra without contemplating your career as a developer.
+> <span>🥳</span> - Rob Kenis, 2019
 
 ## Machine learning
 Machine learning continues to grow on AWS. All types of developers like to try it sooner or later, this resulted in 3 layers of services.
 ### Frameworks for machine learning.
-AWS optmized TensorFlow is 20% faster than any other option (some very fancy private hardware not open to the public). Optimized PyTorch is 22% faster, just like MXNet.
+AWS optimized TensorFlow is 20% faster than any other option (some very fancy private hardware not open to the public). Optimized PyTorch is 22% faster, just like MXNet.
 
 ### SageMaker
 <!-- *Grab a screenshot around 9:45* -->
@@ -100,7 +102,7 @@ Real-time metrics of model performance, help understand and interprete models. R
 Your model might have been pretty accurate last year, but something changed and now your results are far from reality. Detect concept drift in deployed models with [SageMaker Model Monitory](https://aws.amazon.com/blogs/aws/amazon-sagemaker-model-monitor-fully-managed-automatic-monitoring-for-your-machine-learning-models/). Analyze and visualize models so you can detect concept drift.
 
 ### AutoML models
-tl;dr: Data -> 🧙 -> Model.
+tl;dr: data -> 🧙 -> model.
 
 Customers want automatic models with more insight in the actual model.
 #### SageMaker Autopilot **NEW**
@@ -115,28 +117,28 @@ Collect all data and put a csv in S3. Create a new autopilot project in SageMake
 Detecting fraud is very expensive and doesn't scale well because it uses little to no ML.
 
 #### Amazon Fraud Detector **NEW**
-Send AWS your transactions and purchase history, they build a unique model for you.  That model will detect certain email domains for example based on the Amazon experience in fraud detection. These models will give you a fraud scoring on certain events.
+Send AWS your transactions and purchase history, they build a unique model for you. That model will detect certain email domains for example based on the Amazon experience in fraud detection. These models will give you a fraud scoring on certain events.
 
 ### Amazon CodeGuru **NEW**
-Amazon CodeGuru is a machine learning service for automated code reviews and application performance recommendations. It helps you find the most expensive lines of code that hurt application performance and keep you up all night troubleshooting, then gives you specific recommendations to fix or improve your code. You can "call" CodeGuru by adding it as a reviewer on your Pull Request (currently only CodeCommit and GitHub). It then checks your code based on learning models that are trained on Amazon’s code bases comprising hundreds of thousands of internal projects, as well as over 10,000 open source projects in GitHub.
+[Amazon CodeGuru](https://aws.amazon.com/codeguru/) is a machine learning service for automated code reviews and application performance recommendations. It helps you find the most expensive lines of code that hurt application performance and keep you up all night troubleshooting, then gives you specific recommendations to fix or improve your code. You can "call" CodeGuru by adding it as a reviewer on your Pull Request (currently only CodeCommit and GitHub). It then checks your code based on learning models that are trained on Amazon’s code bases comprising hundreds of thousands of internal projects, as well as over 10,000 open source projects in GitHub.
 
 CodeGuru only supports Java applications today, with support for more languages coming soon.
 
 ### Contact Lens for Amazon Connect **NEW**
-Generates analytics on Amazon Connect, which is a managed contact center. Contact Lens captures calls and analyzes if the conversation was positive or negative. With enough data, you can create dashboards containing overall satisfaction.
+Generates analytics on [Amazon Connect](https://aws.amazon.com/connect/), which is a managed contact center. Contact Lens captures calls and analyzes if the conversation was positive or negative. With enough data, you can create dashboards containing overall satisfaction.
 
 ### Amazon Kendra **NEW**
-Amazon Kendra is a highly accurate and easy to use enterprise search service that’s powered by machine learning. Kendra delivers search capabilities to your website or application. Kendra lets you easily add content from file systems or external data sources like Jira or Google Drive. You can also provide a set of FAQs to make it even easier for your users. After uploading the data, Kendra syncs and indexes the data. It'll find concepts and relations between content. The Kendra console offers the ability to test and refine queries. Deploy the Kendra web application or include Kendra (UI) components in your existing application. Natural language enables you to get more specific answers from anywhere in your data. Ask questions like, “Is the IT help desk open at noon?” or “How do I connect to my VPN?” so you can get more precise answers, instead of some terrible confluence page.
+[Amazon Kendra](https://aws.amazon.com/kendra/) is a highly accurate and easy to use enterprise search service that’s powered by machine learning. Kendra delivers search capabilities to your website or application. Kendra lets you easily add content from file systems or external data sources like Jira or Google Drive. You can also provide a set of FAQs to make it even easier for your users. After uploading the data, Kendra syncs and indexes the data. It'll find concepts and relations between content. The console offers the ability to test and refine queries. Natural language enables you to get more specific answers from anywhere in your data. Ask questions like, “Is the IT help desk open at noon?” or “How do I connect to my VPN?” so you can get more precise answers, instead of some terrible confluence page.
 
 ## AWS Infrastructure in your backyard
 
 ### AWS Outposts
-AWS Outposts is a fully managed service that extends AWS infrastructure, AWS services, APIs and tools to virtually any datacenter or on-premises facility for a truly consistent hybrid experience. AWS Outposts is ideal for workloads that require low latency access to on-premises systems, local data processing, or local data storage.
+[AWS Outposts](https://aws.amazon.com/outposts/) is a fully managed service that extends AWS infrastructure, AWS services, APIs and tools to virtually any datacenter or on-premises facility for a truly consistent hybrid experience. AWS Outposts is ideal for workloads that require low latency access to on-premises systems, local data processing, or local data storage.
 
 With AWS Outposts you can run Amazon EC2, Amazon EBS or Amazon RDS in your on-premise infrastructue. Amazon S3 will be available in 2020.
 
 ### AWS Local Zones **NEW**
-A Local Zone is a new type of AWS infrastructure deployment that brings a couple of AWS services very close to a particular geographic area. It's basically a smaller and more local version of an AWS region. They're designed to provide very low (single-digit milliseconds) latency to applications. Right now, they're only available in Los Angeles, but AWS will expand to other locations in 2020.
+A [Local Zone](https://aws.amazon.com/about-aws/global-infrastructure/localzones/) is a new type of AWS infrastructure deployment that brings a couple of AWS services very close to a particular geographic area. It's basically a smaller and more local version of an AWS region. They're designed to provide very low (single-digit milliseconds) latency to applications. Right now, they're only available in Los Angeles, but AWS will expand to other locations in 2020.
 
 ### AWS Wavelength **NEW**
 AWS Wavelength enables you to build applications that serve mobile devices with single-digit millisecond latencies over 5G networks. These applications can include games, live video streaming or virtual reality. It brings AWS services to the edge of the 5G network, minimizing the network hops and latency to connect to an application from a 5G device.
