@@ -25,6 +25,12 @@ Amazon Ion aims to be effecient in changing data between applications. There is 
 ## QLDB and Java
 The [Java Driver API](https://github.com/awslabs/amazon-qldb-driver-java) is open-source on GitHub. It does all the cool stuff like session pooling, transaction commit handling and automatic retries for recoverable errors. *The NodeJS and Python drivers are also availble, but why would you even bother?*
 
+## Verification
+QLDB generates a sha256 for each document. Use the API of QLDB to verify the documents that exist in the journal. With this, you can make sure that a document has not been altered. So when someone with the wrong data, who claims that they have the right data, you can ask them to prove that their data is right. And they will fail.
+
+## QLDB Streaming **NEW**
+Ingest QLDB streams into Kinesis, process it directly with Lambda. Comparable to DynamoDB streams.
+
 ### Useful resources
 - [PartiQL](https://aws.amazon.com/blogs/opensource/announcing-partiql-one-query-language-for-all-your-data/)
 - [Amazon Ion](http://amzn.github.io/ion-docs/)
