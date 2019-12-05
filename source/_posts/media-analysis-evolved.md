@@ -1,6 +1,6 @@
 ---
 title: Media Analysis Evolved Workshop
-cover_index: 2019/12/02/media-analysis-evolved/bezos.jpg
+cover_index: /2019/12/02/media-analysis-evolved/bezos.jpg
 tile_color: '#ae85ca'
 date: 2019-12-02 22:28:03
 tags:

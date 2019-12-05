@@ -1,6 +1,6 @@
 ---
 title: Amazons approach to resilient systems
-# cover_index: 2019/12/03/amazons-approach-to-resilient-systems/index.jpg
+# cover_index: /2019/12/03/amazons-approach-to-resilient-systems/index.jpg
 tile_color: '#bafc03'
 date: 2019-12-02 22:29:16
 tags:

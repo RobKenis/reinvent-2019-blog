@@ -1,6 +1,6 @@
 ---
 title: Keynote with Andy Jassy
-cover_index: 2019/12/03/keynote-with-andy-jassy/index.jpg
+cover_index: /2019/12/03/keynote-with-andy-jassy/index.jpg
 tile_color: '#bada55'
 date: 2019-12-03 08:21:11
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Customizing content delivery at the Edge
-cover_index: 2019/12/04/customizing-content-at-the-edge/index.jpg
+cover_index: /2019/12/04/customizing-content-at-the-edge/index.jpg
 tile_color: '#4bf542'
 date: 2019-12-04 15:09:07
 tags:

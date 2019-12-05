@@ -1,6 +1,6 @@
 ---
 title: 'AWS pre:Invent 2019'
-# cover_index: 2019/12/DAY/TITLE/index.png
+# cover_index: /2019/12/DAY/TITLE/index.png
 date: 2019-12-01 11:45:00
 tile_color: '#7ecaf6'
 tags:

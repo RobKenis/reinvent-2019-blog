@@ -1,6 +1,6 @@
 ---
 title: Automate everything
-# cover_index: 2019/12/DAY/TITLE/index.jpg
+# cover_index: /2019/12/DAY/TITLE/index.jpg
 tile_color: '#ff69b4'
 date: 2019-12-02 22:30:50
 tags:
