@@ -1,6 +1,6 @@
 ---
 title: Day Zero
-cover_index: 2019/12/01/day-zero/index.jpg
+cover_index: /2019/12/01/day-zero/index.jpg
 date: 2019-12-01 15:57:18
 tile_color: '#fea832'
 tags:

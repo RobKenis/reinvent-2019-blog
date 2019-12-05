@@ -1,6 +1,6 @@
 ---
 title: Video Personalization
-cover_index: 2019/12/04/video-personalization/index.jpg
+cover_index: /2019/12/04/video-personalization/index.jpg
 tile_color: '#ff0000'
 date: 2019-12-04 09:43:45
 tags:

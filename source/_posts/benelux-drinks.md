@@ -1,6 +1,6 @@
 ---
 title: Benelux Drinks
-cover_index: 2019/12/04/benelux-drinks/index.jpg
+cover_index: /2019/12/04/benelux-drinks/index.jpg
 tile_color: '#3477eb'
 date: 2019-12-04 09:42:14
 tags:

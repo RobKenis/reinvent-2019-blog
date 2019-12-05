@@ -1,6 +1,6 @@
 ---
 title: Serverless patterns and best practices
-cover_index: 2019/12/03/serverless-patterns-and-best-practices/index.jpg
+cover_index: /2019/12/03/serverless-patterns-and-best-practices/index.jpg
 tile_color: '#f1e57a'
 date: 2019-12-03 11:49:50
 tags:

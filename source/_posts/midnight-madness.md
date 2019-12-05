@@ -1,6 +1,6 @@
 ---
 title: Midnight Madness
-cover_index: 2019/12/01/midnight-madness/deepcomposer.jpg
+cover_index: /2019/12/01/midnight-madness/deepcomposer.jpg
 tile_color: '#8499e7'
 date: 2019-12-01 22:20:21
 tags:
