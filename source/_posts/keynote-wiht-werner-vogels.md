@@ -82,3 +82,9 @@ ShotSpotter are registring gun usage in environments to identify gun shots withi
 Deutsche Bahn are accurately measuring delays on the German train tracks. 
 
 ## Volkswagen
+They produce 44000 vehicles every day, that's a lot. They make over 200 million components and parts every day. Alright alright, they're a big company, we get it. With AWS, they've lifted 200-ish factories into the cloud. This is what they call *The Volkswagen Industrial Cloud*, probably the biggest industrial cloud at the moment. The digital production platform controls the robots, the logistics, the assembly and more. Security controls, IoT and ML power this massive piece of beauty. Algorithms for predictive maintenance is only one feature of the thing. This lead to cost reduction, faster product release and something else, but my fingers are getting tired. 
+
+## Solving hard, human problams
+Wether it's about education, health or anything else. A lot of young companies want to solve these problems. Aquabyte is a Norwegian company that focuses on producing protein. A common problem in Indonesia is that alot of farmers have no identity. This causes them to get ripped off when buying seeds. With AWS, farmers are given an identity, now banks are eager to give out loans because repay rate is almoest 100%. Have a look at the [Now Go build video series]().
+
+*Wait what ?*
