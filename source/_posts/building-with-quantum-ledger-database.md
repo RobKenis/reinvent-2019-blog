@@ -1,6 +1,6 @@
 ---
 title: Building with Quantum Ledger Database
-cover_index: 2019/12/DAY/TITLE/index.jpg
+cover_index: 2019/12/05/building-with-quantum-ledger-database/index.jpg
 tile_color: '#fea832'
 date: 2019-12-05 12:01:37
 tags:
@@ -35,3 +35,4 @@ Ingest QLDB streams into Kinesis, process it directly with Lambda. Comparable to
 - [PartiQL](https://aws.amazon.com/blogs/opensource/announcing-partiql-one-query-language-for-all-your-data/)
 - [Amazon Ion](http://amzn.github.io/ion-docs/)
 - [QLDB explained](https://www.youtube.com/watch?v=jcZ_rsLJrqk)
+- [Workshop resources](https://github.com/aws-samples/amazon-qldb-dmv-sample-java)
