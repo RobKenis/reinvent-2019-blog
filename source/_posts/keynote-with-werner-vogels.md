@@ -1,7 +1,7 @@
 ---
 title: Keynote with Werner Vogels
 cover_index: 2019/12/05/keynote-with-werner-vogels/index.jpeg
-tile_color: '#fea832'
+tile_color: '#ecf026'
 date: 2019-12-05 08:18:36
 tags:
 ---
