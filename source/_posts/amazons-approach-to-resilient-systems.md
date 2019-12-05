@@ -2,16 +2,16 @@
 title: Amazons approach to resilient systems
 # cover_index: 2019/12/03/amazons-approach-to-resilient-systems/index.jpg
 tile_color: '#bafc03'
-date: 2019-12-03 09:34:16
+date: 2019-12-02 22:29:16
 tags:
 ---
-<!-- {% asset_img banner.png "Description goes here" %} -->
+{% asset_img banner.jpg "Venetian Theatre" %}
 
 ## The cultural side
 <!-- - Everyone has operational tasks
 - Dont shoot the firefighter. This doesnt close the loop of improvements and makes being honest harder.
 - Management and 'architects' have to get out of the office and interact with the developing and operating people. -->
-Achieving resilient systems and technical excellence is not all about the newest tools and fastest technology. It's also about the culture in the team and the broader organization. To start, everyone should participate in operational tasks, not just the *operations people*. By the way, don't shoot the firefighter and operations when someone goes wrong. This doesn't close the loop of improvement and only makes it harder to be honest when talking about issues. The third important thing is that non-developing architects and management have to get out of their office and interact with developers that build and operate the systems.
+Achieving resilient systems and technical excellence is not all about the newest tools and fastest technology. It's also about the culture in the team and the broader organization. To start, everyone should participate in operational tasks, not just the *operations people*. By the way, don't shoot the firefighter and operations when something goes wrong. This doesn't close the loop of improvement and only makes it harder to be honest when talking about issues. The third important thing is that non-developing architects and management have to get out of their office and interact with developers that build and operate the systems.
 
 ## The technical side
 <!-- - Retries

@@ -1,8 +1,8 @@
 ---
 title: Midnight Madness
-cover_index: 2019/12/02/midnight-madness/deepcomposer.jpg
+cover_index: 2019/12/01/midnight-madness/deepcomposer.jpg
 tile_color: '#8499e7'
-date: 2019-12-02 22:20:21
+date: 2019-12-01 22:20:21
 tags:
 ---
 {% asset_img panoramaaaaa.jpg "Midnight Madness" %}
