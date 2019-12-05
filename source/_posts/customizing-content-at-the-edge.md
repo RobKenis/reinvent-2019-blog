@@ -5,31 +5,33 @@ tile_color: '#4bf542'
 date: 2019-12-04 15:09:07
 tags:
 ---
-{% asset_img banner.png "Customizing content delivery with Lambda@Edge" %}
-
 <!-- Intercept request on viewer request and response and origin request and response.
 Can be used to add headers, A/B testing and URL rewriting for example. Originless flows like redirecting. -->
 When you want to serve your website on a global scale, you will eventually get complaints from clients because their response times are slow. This makes sense, since some clients will be further away from the region where your website is hosted. You can't bring your clients closer to your server, but you can move your computations closer to your clients. Leverage Lambda@Edge to run compute when clients hit your CloudFront edge.
 
-<!-- Use https://observatory.mozilla.org/ to optimize website security. -->
 
 ## Security
 In modern web, many security features are implemented and enforced by the web browsers. The client-side security features are usually enabled and configured by HTTP response headers sent by a web server. However, a web server may not include all of the desired security headers in responses sent to your clients.
+
 We will add several response headers to enable web browsers security features. For example, the Strict-Transport-Security response header protects your viewers from certain categories of the man-in-the-middle attacks, and the Content-Security-Policy header helps prevent cross-site scripting (XSS), clickjacking, and other code injection attacks resulting from execution of malicious content in the trusted web page context. We will also configure the CloudFront distribution to always require HTTPS for communication between your viewers and CloudFront. All HTTP requests received by CloudFront will be redirected a corresponding HTTPS URL. Redirecting all requests to HTTP is a setting on CloudFront behaviours, no further action is required. To add extra security headers, intercept the request on the Origin-Response. Using Origing-Response has the advantage of being cacheable, compared to Viewer-Response. During the Lambda executiom, add the headers you want to the Response object.
+
+You can use https://observatory.mozilla.org/ to validate if your site's security is configured correctly.
 <!-- Lambda has a *Deploy to Lambda at edge* action, which is pretty handy. Lambda@Edge has support for Nodejs up until 10.x -->
 
 ## Content Generation
-With Lambda@Edge, you go beyond modifying HTTP requests and response that CloudFront receives from and sends to your viewers or your origin. Using your Lambda@Edge functions, you can generate content on the fly closest to your viewers without even going to an origin by returning a response from a Lambda@Edge function triggered by viewer-request or origin-request events. By triggering lambda on origin-request, we can leave out the use of API gateway and trigger lambda straight from cloudfront.
+With Lambda@Edge, you go beyond modifying HTTP requests and response that CloudFront receives from and sends to your viewers or your origin. Using your Lambda@Edge functions, you can generate content on the fly closest to your viewers without even going to an origin by returning a response from a Lambda@Edge function triggered by viewer-request or origin-request events. By triggering lambda on origin-request, we can leave out the use of API Gateway and trigger a Lambda straight from CloudFront.
 
 ## Simple API
-In order to make a simple website a little bit more interactive let's accept some feedback from the viewers and reflect it in the dynamically generated pages. The downside of using lambda at edge instead of API Gateway is the manual checking for request method. You get GET, PUT, POST to the behaviour, CloudFront doesn't care for the method. The upside is that the computation is executed as close as possible to the client, making sure response times are faster than you can imagine.
+In order to make a simple website a little bit more interactive, let's accept some feedback from the viewers and reflect it in the dynamically generated pages. The downside of using Lambda@Edge instead of API Gateway is the manual checking for request method. You can add GET, PUT or POST to the behaviour; CloudFront doesn't care which method it receives. The upside is that the computation is executed as close as possible to the client, making sure response times are faster than you can imagine.
 
 ## Pretty URLs
 Pretty URLs are easy to read and remember. They also help with search engine ranking and allow your viewers to use the descriptive links in social media.
 There are two common ways to serve content with pretty URLs:
 - Redirect from semantic URLs to the URLs accepted by the origin
-- Rewrite semantic URLs to URLs accepted by the origin. This can be done either by the origin itself or by an intermediate proxy. The URI rewrite approach has two advantages over the redirect:
-- Faster content delivery as there is now need for an extra round-trip between the server and the client to handle the redirect 
+- Rewrite semantic URLs to URLs accepted by the origin. This can be done either by the origin itself or by an intermediate proxy.
+
+The URI rewrite approach has two advantages over the redirect:
+- Faster content delivery as there is now need for an extra round-trip between the server and the client to handle the redirect
 - The semantic URLs stay in the address bar of the web browser
 
 ```javascript
