@@ -22,6 +22,10 @@ Documents are stored in Amazon Ion format and are queried using PartiQL *pronoun
 PartiQL is the query language used in QLDB. To make data easy to move between multiple types of database, one language can be used to query it. It's SQL compatible language with minimal extensions. As stated above, it is format and datastore independent. Most statement and functions that you already know from SQL are supported in PartiQL. 
 Amazon Ion aims to be effecient in changing data between applications. There is no schema, so it can grow as the application needs. It supports both a human readable text format and a binary format for efficiency. SQL scalar types are covered like numbers and strings. This thing looks like JSON, as a MongoDB user, this looks promising.
 
+## QLDB and Java
+The [Java Driver API](https://github.com/awslabs/amazon-qldb-driver-java) is open-source on GitHub. It does all the cool stuff like session pooling, transaction commit handling and automatic retries for recoverable errors. *The NodeJS and Python drivers are also availble, but why would you even bother?*
+
 ### Useful resources
-[PartiQL](https://aws.amazon.com/blogs/opensource/announcing-partiql-one-query-language-for-all-your-data/)
-[Amazon Ion](http://amzn.github.io/ion-docs/)
+- [PartiQL](https://aws.amazon.com/blogs/opensource/announcing-partiql-one-query-language-for-all-your-data/)
+- [Amazon Ion](http://amzn.github.io/ion-docs/)
+- [QLDB explained](https://www.youtube.com/watch?v=jcZ_rsLJrqk)
