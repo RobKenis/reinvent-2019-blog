@@ -66,3 +66,19 @@ The Amazon Builders' [Library **NEW**](https://aws.amazon.com/builders-library)
 
 #### Saildrone
 Ocean data is scarce, because everyone is scared to gather the data. The sea is scary 👻. *Rob took a break from typing for a second*
+
+## Industry evolution
+1.0: Steam machiines
+2.0: Electrity
+3.0: Electronics started to arrive
+4.0: Automation start taking place. Especially things like logistics. Are we really in industry 4.0 ? Factory equipment is way too old, they don't gather enough information to gain insights. The data needs to start flowing out of manufactoring sites into places where you can do analytics. 
+
+When Amazon started with selling books, logistics was easy. When they started selling TVs, books, pillows and coffee, things got alot harder. Computer vision is used to identify items and robots drive the correct products to people putting them into boxes.
+Buying at Amazon is defined in 4 categories: forecasting, buying, placement and customer service. Machine learning is at the basis of all of this. This also powers major innovations like Alexa and Amazon Go stores. AWS is powering this revolution. Lots of things in the physical world are powered by AWS, Woodside for example. They do very complicated things, that even startled Werner a little. Woodside started producing useful data instead of just using alarms that tell you when something stopped working. They are now using autonomous platforms that only use robots. These innovations can remove humans from very dangerous plants. Another example is Modjoul, they make smart wearables like safety belts to meaure if their workers are using the right techniques and improve worker health. 
+
+## Making our cities smarter
+ShotSpotter are registring gun usage in environments to identify gun shots within 60 seconds and notify law enforcements. Since then, gun homocides have reduced drastically. Miovision put sensors on the streets to optimize transportation. The climate corporation built something like 'Climate field view' to help farmers optimize field usage. Farmers are sharing information anonymously about their crop fielding so prices for their sold crops are accurate. 
+## Modernizing transportation
+Deutsche Bahn are accurately measuring delays on the German train tracks. 
+
+## Volkswagen
