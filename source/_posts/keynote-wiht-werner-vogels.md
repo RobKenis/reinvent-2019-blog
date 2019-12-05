@@ -56,3 +56,13 @@ They're a gobal assets manager, around $5.7 trillion in assets. They have indust
 At AWS, we alway think about evolvable architecture. The software you are building now might not be the software you're running a year from now. There's no better example than S3. S3 started of as 8 microservices, now there are 262 microservices. Including S3 access points, S3 access analyzer and more. Everything fails all the time, network controllers do weird things, bitflips are just straight up stupid. We're always thinking about reducing impact on customers, we call this blast radius reduction. 
 #### Cell based architectures
 A cell based version of a multi-AZ application would be divived into multiple cells to reduce blast radius. This is zonal based architecture. EBS is a very good example, EBS is made up of multiplem replicated shards that make up the block store. To control failure, the configuration master on a second network, rewires the set of shards when anything fails. If mulitple things fail at the same time, this thing can get overloaded fast. In a world where you have partitions, you cannot have consistency and availability. To ensure both things in EBS, cell-based architectures were introduced. By splitting the architecture in zones and then splitting the zones, you reduce the blast radius. Not all data must be accessible to all clients. Instead of splitting EBS in zones, they splitted EBS in millions of small units to minimiize the blast radius. Each volume that gets created, gets a partition key, each database controls one PK. This creates a colony of cells, inside a cell there's 7 nodes. A cell has a dedicated master. [Physalia]() also maoves nodes as close as possible to the clients. Introducing Physalia reduced the error rate spectacularly. 
+##### Shuffle sharding
+You have a number of nodes and randomly spread them over different shards. When a client fails, not all nodes in a shard are effected. 
+> The magic of math. - Werner Vogels, 2019
+
+### Building distributed systems is hard
+Amazon has been doing this the last 25 years on a scale that is unmatched. How does Amazon do this ? 
+The Amazon Builders' [Library **NEW**](https://aws.amazon.com/builders-library)
+
+#### Saildrone
+Ocean data is scarce, because everyone is scared to gather the data. The sea is scary 👻. *Rob took a break from typing for a second*
