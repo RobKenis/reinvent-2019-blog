@@ -21,16 +21,15 @@ With the introduction of *Kubernetes on Fargate*, you get another option to worr
 - [Building full-stack serverless applications with Amplify](/2019/12/06/building-full-stack-applications-with-amplify/)
 
 ## Machine Learning
-The machine learning portfolio on AWS is divided in 3 major categories. The high-level services like Rekognition, Polly and Lex that are targeted for developers without much knowlegde about machine learning. These services provide and API and do the machine learning part behind the scenes so the client has nothing to worry about. The second category is SageMaker, a service that lets you build and train your own models, but abstracts the layer of provisioning servers. And the third layer, the machine learning optimized AMI for the developers that really know what they're doing. This years re:Invent aimed on the second category, SageMaker. With a handfull of new releases, AWS brings SageMaker closer to the developers without AI and ML knowledge.
+The machine learning portfolio on AWS is divided in 3 major categories. The high-level services like Rekognition, Polly and Lex that are targeted for developers without much knowlegde about machine learning. These services provide an API and do the machine learning part behind the scenes, so the client has nothing to worry about. The second category is SageMaker. A service that lets you build and train your own models, but abstracts the layer of provisioning servers. And the third layer, the machine learning optimized AMI for the developers that really know what they're doing. This years re:Invent aimed on the second category, SageMaker. With a handful of new releases, AWS brings SageMaker closer to the developers without AI and ML knowledge.
 ### Related posts
 - [Video Personalization](/2019/12/04/video-personalization/)
 - [Real World ML lifecycle with Amazon SageMaker](/2019/12/04/real-world-ml-lifecycle-with-sagemaker/)
 - [Building a recommendation engine](/2019/12/05/building-a-recommendation-engine/)
 
 ## Computing at the Edge
-If you have cilents all around the world, you have to give everyone the best experience possible. Deploying everything in one region and sacrificing response times for clients that happen to be far away, is no longer an option. With *Lambda@Edge* and *DynamoDB Global Tables*, you can execute your code as soon as your client hits a CloudFront Edge, bringing your application closer to your customers and improving response times.
+If you have clients all around the world, you have to give everyone the best experience possible. Deploying everything in one region and sacrificing response times for clients that happen to be far away, is no longer an option. With *Lambda@Edge* and *DynamoDB Global Tables*, you can execute your code as soon as your client hits a CloudFront Edge, bringing your application closer to your customers and improving response times.
 ### Related posts
 - [Customizing content delivery at the Edge](/2019/12/04/customizing-content-at-the-edge/)
-
 
 *Thank you for reading along with us. We'll see you again next year!*
